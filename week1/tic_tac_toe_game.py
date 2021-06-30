@@ -127,6 +127,7 @@ if __name__ == '__main__':
     if player_chosen_value == '0':
         computer_make_move('X')
         turn = 1
+        fields_filled += 1
         start_game()
     elif player_chosen_value == 'X':
         start_game()
