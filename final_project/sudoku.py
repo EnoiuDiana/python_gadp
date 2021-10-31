@@ -163,7 +163,7 @@ class GenerateSudokuBoard(object):
         self.generated_board = []
 
     def generate_random_board(self):
-        with open('boards.sudoku', 'r') as boards_file:
+        with open('boards.txt', 'r') as boards_file:
             board_number = random.randint(1, 50)
             searched_grid = 'Grid ' + str(board_number)
             read_rows = 0
@@ -188,7 +188,7 @@ class GenerateSudokuBoard(object):
         return row_list
 
     def generate_first_board(self):
-        with open('boards.sudoku', 'r') as boards_file:
+        with open('boards.txt', 'r') as boards_file:
             lines = range(1, 10)
             for line in enumerate(boards_file):
                 if line[0] in lines:
